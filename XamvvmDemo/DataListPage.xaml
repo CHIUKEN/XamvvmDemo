@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamvvmDemo.DataListPage">
+	<ContentPage.Content>
+		<StackLayout HorizontalOptions="CenterAndExpand">
+			<ListView ItemsSource="{Binding Items}" HasUnevenRows="true">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout HorizontalOptions="Start">
+								<Label x:Name="Name" Text="{Binding Name}" TextColor="Navy" FontSize="20" />
+								<Label x:Name="City" Text="{Binding City}" />
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

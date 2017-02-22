@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamvvmDemo.MainPage" Title="首頁">
+	<ContentPage.Content>
+		<StackLayout>
+			<Label Text="{Binding WelcomeText}" FontSize="20" VerticalOptions="Center" HorizontalOptions="Center" />
+			<Button Text="Demo List" Command="{Binding DataButtonCommand}" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
